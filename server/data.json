@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "World War Z",
+        "type": "Movie"
+    },
+    {
+        "id": 2,
+        "name": "Contagion",
+        "type": "Movie"
+    },
+    {
+        "id": 3,
+        "name": "The Walking Dead",
+        "type": "TV Series"
+    },
+    {
+        "id": 4,
+        "name": "The Last of Us",
+        "type": "Video Game"
+    }
+]
