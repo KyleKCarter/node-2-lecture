@@ -1,10 +1,12 @@
 const express = require('express')
 
-const {getAllMedia, getMedia, addMedia} = require('./controller')
+const {getAllMedia, getMedia, addMedia, updateMedia, deleteMedia} = require('./controller')
+const {getAllCharacters} = require('./axios')
 
 const app = express()
 
 //MIDDLEWARE
+//example of middleware
 app.use((req, res, next) => {
     console.log('testing to see if middleware works')
     // console.log(req)
@@ -21,6 +23,10 @@ app.get('/middleware', (req, res) => {
 app.get('/api/media', getAllMedia)
 app.get('/api/media/:id', getMedia)
 app.post('/api/add', addMedia)
+app.put('/api/update/:id', updateMedia)
+app.delete('/api/delete/:id', deleteMedia)
+
+app.get('/api/characters', getAllCharacters)
 
 
 const PORT = 6050
